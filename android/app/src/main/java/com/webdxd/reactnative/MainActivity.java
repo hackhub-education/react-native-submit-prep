@@ -1,4 +1,4 @@
-package com.pokeball;
+package com.webdxd.reactnative;
 
 import com.facebook.react.ReactActivity;
 

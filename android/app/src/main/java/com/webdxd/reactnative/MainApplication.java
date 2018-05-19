@@ -1,4 +1,4 @@
-package com.pokeball;
+package com.webdxd.reactnative;
 
 import android.app.Application;
 
