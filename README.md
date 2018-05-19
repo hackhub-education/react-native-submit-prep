@@ -12,6 +12,7 @@ Thus it's highly recommended that you have icons in vector files or at least fil
 
 Recommended software to help you with icons: [Prepo](https://itunes.apple.com/ca/app/prepo/id476533227?mt=12)
 
+More Generators: [Google "mobile icon generator"](https://www.google.ca/search?q=mobile+icon+generator&oq=mobile+icon+gen&aqs=chrome.0.0j69i57j0l4.5993j1j1&sourceid=chrome&ie=UTF-8)
 
 ### Android
 Recommended tool: [AndroidAssetStudio](https://romannurik.github.io/AndroidAssetStudio/icons-launcher.html#foreground.type=image&foreground.space.trim=1&foreground.space.pad=0.05&foreColor=rgba(96%2C%20125%2C%20139%2C%200)&backColor=rgb(96%2C%20125%2C%20139)&crop=0&backgroundShape=square&effects=none&name=ic_launcher)
@@ -75,9 +76,12 @@ Gradle' cleaning in the end (in /android folder):
 * You will need to have an active [Apple Developer Membership](https://developer.apple.com/)
 * Your app's bundle ID is registered in [iTunes Connect](https://itunesconnect.apple.com/)
 * Change the `Bundle Identifier` in project inspector
-* Change the `Team` in `Signing` area and check out `Automatically manage signing`
-
-
+* Change the `Team` in `Signing` area and mark `Automatically manage signing` as checked
+* Choose either `Generic iOS Device` or your connected iOS devices.
+* Choose `Product --> Archive` from the Xcode menu
+* After you have the archive file, you can export to `App Store` build or `Ad Hoc` build depending on your need.
+* Or you can simply upload to App Store from the Xcode Archinve screen
+ 
 ### Android
 
 Checkout Reference from [Facebook](https://facebook.github.io/react-native/docs/signed-apk-android.html).
@@ -97,7 +101,9 @@ Checkout Reference from [Facebook](https://facebook.github.io/react-native/docs/
   ```MYAPP_RELEASE_STORE_FILE=my-release-key.keystore
     MYAPP_RELEASE_KEY_ALIAS=my-key-alias
     MYAPP_RELEASE_STORE_PASSWORD=*****
-    MYAPP_RELEASE_KEY_PASSWORD=*****```
+    MYAPP_RELEASE_KEY_PASSWORD=*****
+  ```
+
 * Step 4
   
   Edit `android/app/build.gradle` file to add following code.
