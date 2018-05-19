@@ -27,6 +27,7 @@ Open `<project>.xcodeproj` from `./ios` folder.
 * Choose your project in the navigation area (the left panel)
 * Change **Bundle Identifier** in `identity` area.
 
+<img src='https://github.com/webdxd/react-native-submit-prep/blob/master/img/bundle_id.png?raw=true' alt='Screenshot Bundle ID' />
 
 ### Android
 
